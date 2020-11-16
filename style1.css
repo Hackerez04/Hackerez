@@ -198,4 +198,7 @@ p.ds{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
+@media screen and (min-width: 1200) {
+	.sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
