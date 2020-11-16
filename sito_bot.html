@@ -19,7 +19,10 @@
 		background-image:url(discord_background.jpg);
 		padding-bottom: 50px;
 	}
-	
+	.sfondodisc2 {
+		background-image:url(ds_pattern.png);
+		padding-bottom: 50px;
+	}
 	.titoloinizio {
 		text-align:center;
 		font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -45,6 +48,12 @@
 		color:#FFFFFF;
 	}
 	
+	.titbot2 {
+		margin-left: 50px;
+		font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+		color:#FFFFFF;
+	}
+	
 	.dsblue {
 		color:#7289da !important;
 	}
@@ -53,6 +62,16 @@
 		color:#000000 !important;
 	}
 	
+	.comandi {
+		align-content: center;
+		font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+		color: white;
+		background-color:#7289da;
+		border-radius: 10px;
+		padding: 13px 13px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.dsrosso {
 		color:#FF0004;
 	}
@@ -107,11 +126,13 @@
 		display: block;
 		font-size: 16px;
 		padding: 16px 16px;
+		text-align: center;
 	}
 	
 	
 	.rounded-circle {
 		border-radius: 100px;
+		
 	}
 	
 
@@ -158,7 +179,8 @@
 		position: absolute;
 		width: 100%;
 		height: 143px;
-		bottom: -555px;
+		position: fixed;
+		bottom: 0;
 		left: 0;
 		/* background: url(../../../Users/admin/Pictures/wave.png); */
 		background: url(wave.png);
@@ -170,7 +192,8 @@
 		position: absolute;
 		width: 100%;
 		height: 143px;
-		bottom: -555px;
+		
+
 		left: 0;
 		top: 0;
 		/* background: url(../../../Users/admin/Pictures/wave.png); */
@@ -185,7 +208,7 @@
 		position: absolute;
 		width: 100%;
 		height: 143px;
-		bottom: -555px;
+
 		left: 0;
 		top: 0;
 		/* background: url(../../../Users/admin/Pictures/wave.png); */
@@ -275,7 +298,7 @@
 
 
 
-<body class="sfondodisc">
+<body class="sfondodisc2">
 
 <div id="mySidenav" class="sidenav">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -301,20 +324,65 @@
   </table>
 
 
-<div class="sfondodisc">
+
 <p>-</p>
 <div class="giu">
-<div class="titoloinizio"><h1>═╝Hackerez╚═ bot</h1></div>
+<div class="titoloinizio">
+	<h1>═╝Hackerez╚═ bot</h1>
+	<img class="rounded-circle" src="https://cdn.discordapp.com/app-icons/625678664268382210/66898f5089fb17e2d9a3fd0fc5a14f3c.png?size=256" alt="Generic placeholder image" style="display:;" width="150" height="150" >
+</div>
 </div>
 <br>
 <br>
-
-
-
 <br>
-</div>
-<div class="sfondodisc">
+<div class="centro"><p class="ds">Written in discord.py<br>
+This is a bot created to have fun with ther users</p></div>
+<br>
+<br>
+<br>
+<table class="comandi">
+	<tr>
+		<td>
+			<tr>
+				<th>═╝Hackerez╚═ Command Prefix: /</th>
+			</tr>
+			<tr>
+				<th>Command List:</th>
+			</tr>
+			<tr>
+				<td>
+					<b>/help</b> - Show a basic command list
+					<br>
+					<b>/?fun</b> - Show a detailed list of commands for fun
+					<br>
+					<b>/?meme</b> - Show a detailed list of commands for meme
+					<br>
+					<b>/?games</b> - Show a detailed list of commands for games
+					<br>
+					<b>/?currency</b> - Shows a detailed list of commands for the economy
+					<br>
+					<b>/?support</b> - Shows a detailed list of support commands and bot information
+					<br>
+					<b>/?count</b> - Shows a detailed list of commands for a game
+				</td>
+			</tr>
+		</td>
+		
+		<td>
+			<div class="scatola2">
+				<a class="link1" href="https://discord.com/api/oauth2/authorize?client_id=625678664268382210&permissions=8&scope=bot" target="_blank"><b>Click here to invite the bot</b></a>
+			</div>
+		</td>
+	</tr>
+	
+</table>
+<br>
+<br>
+<section>
+<div class="wave"></div>
+</section>
 
+<!--
 <div class="destra8">
 <img class="rounded-circle" src="https://cdn.discordapp.com/app-icons/625678664268382210/66898f5089fb17e2d9a3fd0fc5a14f3c.png?size=256" alt="Generic placeholder image" style="display:;" width="150" height="150" >
 </div>
@@ -382,5 +450,6 @@ Command list:
 <section>
 <div class="wave"></div>
 </section>
+-->
 </body>
 </html>
