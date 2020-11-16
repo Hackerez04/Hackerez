@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+<link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
+<link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+<meta charset="utf-8">
+<title>discord bot</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+<style>
+
+	.sgrigio {
+		background-color:#363636;
+	}
+	
+	.sfondodisc {
+		background-image:url(discord_background.jpg);
+		padding-bottom: 50px;
+	}
+	
+	.titoloinizio {
+		text-align:center;
+		font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+		color:#FFFFFF;
+	}
+	
+	
+	.scritteds{
+		font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+		color:#FFFFFF;
+	}
+		
+	
+	.centro {
+		text-align:center;
+	}
+	
+	
+	.titolobot {
+		margin-left:250px;
+		margin-top:-110px;
+		font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+		color:#FFFFFF;
+	}
+	
+	.dsblue {
+		color:#7289da !important;
+	}
+	
+	.dsnero {
+		color:#000000 !important;
+	}
+	
+	.dsrosso {
+		color:#FF0004;
+	}
+	
+	.giu {
+		margin-top:50px;
+	}
+	
+	
+	.destra10 {
+		margin-right:50px;
+		margin-top:-190px;
+	}
+	
+	.destra6 {
+		margin-left:80px;
+	}
+	
+	.destra8 {
+		margin-left:50px;
+	}
+	
+	.destra9 {
+		margin-left:250px;
+		margin-top:-10px;
+	}
+	
+	.destra7 {
+		margin-left:250px;
+		margin-top:20px;
+	}
+	
+	.bordiscatola {
+		margin-left:80px;
+		margin-right:700px;
+	}
+	
+	.scatola {
+		background-color: #7289da;
+		color: #fff;
+		border-radius: 8px;
+		display: block;
+		font-size: 16px;
+		padding: 20px 30px;
+		font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+	}
+	
+	.scatola2 {
+		background-color:#000000;
+		color: #fff !important;
+		border-radius: 8px;
+		display: block;
+		font-size: 16px;
+		padding: 16px 16px;
+	}
+	
+	
+	.rounded-circle {
+		border-radius: 100px;
+	}
+	
+
+	.scatola3 {
+		background-color:#ABABAB;
+		color: #474747 !important;
+		border-radius: 50px;
+		display: block;
+		font-size: 16px;
+		padding: -1px 0px;
+		font-family:BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	.bordiscatolab {
+		margin-left:900px;
+		margin-right:275px;
+	}
+	.bordiscatola3 {
+		margin-left:600px;
+		margin-right:600px;
+	}
+	
+	.destra11 {
+		margin-left:250px;
+	}
+	.destra12 {
+		margin-left:480px;
+		margin-top:-40px;
+	}
+	
+	
+	section
+	{
+		width: 100%;
+		height: 18vh;
+		/*
+		background: #363636;
+		*/
+		background-image: url(discord_background.jpg);
+	}
+	
+	section .wave
+	{
+		position: absolute;
+		width: 100%;
+		height: 143px;
+		bottom: -555px;
+		left: 0;
+		/* background: url(../../../Users/admin/Pictures/wave.png); */
+		background: url(wave.png);
+		animation: animate 7s linear infinite;
+	}
+	section .wave:before
+	{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 143px;
+		bottom: -555px;
+		left: 0;
+		top: 0;
+		/* background: url(../../../Users/admin/Pictures/wave.png); */
+		background: url(wave.png);
+		opacity: 0.4;
+		animation: animate-reverse 7s linear infinite;
+	}
+	
+	section .wave:after
+	{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 143px;
+		bottom: -555px;
+		left: 0;
+		top: 0;
+		/* background: url(../../../Users/admin/Pictures/wave.png); */
+		background: url(wave.png);
+		opacity: 0.7;
+		animation-delay: -5s;
+		animation: animate 14s linear infinite;
+	}
+	
+	@keyframes animate
+	{
+		0%
+		{
+			background-position: 0;
+		}
+		100%
+		{
+			background-position: 1360px;
+		}
+	}
+	
+	@keyframes animate-reverse
+	{
+		0%
+		{
+			background-position: 1360px;
+		}
+		100%
+		{
+			background-position: 0;
+		}
+	}
+
+
+
+	.link1:link{
+  		background-color: #000000;
+  		color: white;
+  		padding: 14px 25px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+	}
+
+	.link1:visited{
+		background-color: #000000;
+  		color: white;
+  		padding: 14px 25px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+	}
+
+	.link1:hover{
+		  background-color: rgb(53, 50, 50);
+		  border-radius: 50px;
+	}
+
+	.link1:active{
+		background-color: rgb(53, 50, 50);
+		border-radius: 50px;
+	}
+	
+	</style>
+
+<script>
+
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	  document.getElementById("main").style.marginLeft = "250px";
+	  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	}
+	
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	  document.getElementById("main").style.marginLeft = "0";
+	  document.body.style.backgroundColor = "#363636";
+	}
+	
+	</script>
+
+
+</head>
+
+
+
+
+<body class="sfondodisc">
+
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="sito_bot.html">Discord Bot</a>
+	<a href="launchpad.html">Launchpad</a>
+	<a href="contact.html">Contact</a>
+	<a href="Hackerez.html">Back</a>
+</div>
+		  
+<!-- Use any element to open the sidenav -->
+<table>
+	<tr>
+	  <td>
+		<div class="bottone1" onclick="openNav()"><b>Menu</b></div>
+	  </td>
+	  <td>
+		<a class="yt" href="https://www.youtube.com/channel/UCrRgMTVz4Uu-_pKMOR6ygIg" target="_blank"><div class="youtube"><b>You Tube</b></div></a>
+	  </td>
+	  <td>
+		<a class="ds" href="https://discord.gg/D3AVjxF" target="_blank"><div class="discord"><b>Discord</b></div></a>
+	  </td>
+	</tr>
+  </table>
+
+
+<div class="sfondodisc">
+<p>-</p>
+<div class="giu">
+<div class="titoloinizio"><h1>═╝Hackerez╚═ bot</h1></div>
+</div>
+<br>
+<br>
+
+
+
+<br>
+</div>
+<div class="sfondodisc">
+
+<div class="destra8">
+<img class="rounded-circle" src="https://cdn.discordapp.com/app-icons/625678664268382210/66898f5089fb17e2d9a3fd0fc5a14f3c.png?size=256" alt="Generic placeholder image" style="display:;" width="150" height="150" >
+</div>
+<div class="titolobot"><h2>═╝Hackerez╚═</h2></div>
+<br>
+<div class="destra9"><div class="dsblue"><b>Written in discord.py</b></div></div>
+<div class="destra7"><div class="scritteds">This is a bot created to have fun with other users</div></div>
+<br>
+<div class="scritteds"><div class="destra6"><i>═╝Hackerez╚═ Commands Prefix:</i> <b><span style="background-color: black; padding-left: 5px; padding-right: 5px;">/</span></b></div></div>
+<div class="bordiscatola"><div class="scatola">
+<p>
+Command list:
+<br>
+<b>/help</b> - Show a basic command list
+<br>
+<b>/?fun</b> - Show a detailed list of commands for fun
+<br>
+<b>/?meme</b> - Show a detailed list of commands for meme
+<br>
+<b>/?games</b> - Show a detailed list of commands for games
+<br>
+<b>/?currency</b> - Shows a detailed list of commands for the economy
+<br>
+<b>/?support</b> - Shows a detailed list of support commands and bot information
+<br>
+<b>/?count</b> - Shows a detailed list of commands for a game
+</p>
+</div></div>
+<br>
+<br>
+<br>
+
+
+
+<div class="destra10">
+<div class="bordiscatolab"><div class="scatola2">
+<p><a class="link1" href="https://discord.com/api/oauth2/authorize?client_id=625678664268382210&permissions=8&scope=bot" target="_blank"><b>Click here to invite the bot</b></a></p>
+</div></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="centro"><div class="dsblue">
+<div class="bordiscatola3">
+<div class="scatola3">
+<h4><span class="dsnero">Created by:</span><br><img class="rounded-circle" src="https://images.discordapp.net/avatars/590217414763872258/a46625d2d6548784d7d9800a7b15d27e.png" style="display:;" width="40" height="40">Hackerez#0162</h4>
+</div>
+</div>
+</div></div>
+
+
+
+
+</div>
+
+<section>
+<div class="wave"></div>
+</section>
+</body>
+</html>

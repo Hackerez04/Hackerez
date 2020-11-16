@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+<link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
+<link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+</head>
+<body class="blackbg">
+
+<script>
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.9)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "#363636";
+}
+
+</script>
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="sito_bot.html">Discord Bot</a>
+    <a href="launchpad.html">Launchpad</a>
+    <a href="contact.html">Contact</a>
+    <a href="Hackerez.html">Back</a>
+</div>
+      
+<!-- Use any element to open the sidenav -->
+<table>
+  <tr>
+    <td>
+      <div class="bottone1" onclick="openNav()"><b>Menu</b></div>
+    </td>
+    <td>
+      <a class="yt" href="https://www.youtube.com/channel/UCrRgMTVz4Uu-_pKMOR6ygIg" target="_blank"><div class="youtube"><b>You Tube</b></div></a>
+    </td>
+    <td>
+      <a class="ds" href="https://discord.gg/D3AVjxF" target="_blank"><div class="discord"><b>Discord</b></div></a>
+    </td>
+  </tr>
+</table>
+      
+
+<div id="main">
+
+<div class="centro">
+<img src="logo.jpg" class="logo" alt="hackerez_logoa">
+<h1>Hackerez</h1>
+<br>
+<br>
+<p class="ds">Welcome to my official website.<br> Here you will find what I do in the field of music and programming. <br>If you want to contact me go to the appropriate
+  menu area. <br>Good continuation!</p>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
