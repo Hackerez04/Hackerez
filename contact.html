@@ -94,7 +94,7 @@ function closeNav() {
 
 
 <div class="os_func">
-	<h4>2.0</h4>
+	<h4>1.5</h4>
 	<p class="os_os">
 import math
 from turtle import Turtle, Screen
@@ -114,7 +114,7 @@ a=0
 b=0
 c=0
 i=""
-version="2.0"
+version="1.5"
 print("Controllo aggiornamenti...")
 time.sleep(2)
 sito="https://hackerez04.github.io/Hackerez/contact.html"
@@ -172,7 +172,6 @@ def txt(nome):
         print("___________________________________________________________")
         e=0
         while e==0:
-            #print("Type 'd' to delete, 's' to save or 'c' to decrypt")
             print("Type 'd' to delete or 's' to save")
             e=str(input(">> "))
             if e=="s":
@@ -180,49 +179,6 @@ def txt(nome):
             elif e=="d":
                 os.remove("%s.txt"%(nome))
                 print("%s.txt has been deleted"%(nome))
-##            elif e=="c":
-##                    t=t.replace("""
-##                                ""","//")
-##                    t=t.replace("0","F")
-##                    t=t.replace("R","1")
-##                    t=t.replace("S","2")
-##                    t=t.replace("A","3")
-##                    t=t.replace("T","4")
-##                    t=t.replace("D","5")
-##                    t=t.replace("V","6")
-##                    t=t.replace("E","7")
-##                    t=t.replace("I","8")
-##                    t=t.replace("B","9")
-##                    t=t.replace("!3","A")
-##                    t=t.replace("!9","B")
-##                    t=t.replace("X","C")
-##                    t=t.replace("!5","D")
-##                    t=t.replace("E","E")
-##                    t=t.replace("!0","F")
-##                    t=t.replace("H","G")
-##                    t=t.replace("!G","H")
-##                    t=t.replace("!8","I")
-##                    t=t.replace("N","J")
-##                    t=t.replace("Z","K")
-##                    t=t.replace("W","L")
-##                    t=t.replace("O","M")
-##                    t=t.replace("!J","N")
-##                    t=t.replace("!M","O")
-##                    t=t.replace("U","P")
-##                    t=t.replace("Y","Q")
-##                    t=t.replace("!1","R")
-##                    t=t.replace("!2","S")
-##                    t=t.replace("!4","T")
-##                    t=t.replace("!P","U")
-##                    t=t.replace("!6","V")
-##                    t=t.replace("!L","W")
-##                    t=t.replace("!C","X")
-##                    t=t.replace("!Q","Y")
-##                    t=t.replace("!K","Z")
-##                    t=t.replace("//","\n")
-##                    print(t)
-##                    print("______________________________________________")
-##                    print("Decrypted")
             else:
                 e=0
         
@@ -231,83 +187,14 @@ def txt(nome):
         y=0
         while y==0:
             try:
-                #y=str(input("Do you want to encrypt the text? (y/n): "))
                 y=str(input("Do you want to save the text? (y/n): "))
                 if y=="y":
-##                    #changes
-##                    t=t.replace("a","A")
-##                    t=t.replace("b","B")
-##                    t=t.replace("c","C")
-##                    t=t.replace("d","D")
-##                    t=t.replace("e","E")
-##                    t=t.replace("f","F")
-##                    t=t.replace("g","G")
-##                    t=t.replace("h","H")
-##                    t=t.replace("i","I")
-##                    t=t.replace("j","J")
-##                    t=t.replace("k","K")
-##                    t=t.replace("l","L")
-##                    t=t.replace("m","M")
-##                    t=t.replace("n","N")
-##                    t=t.replace("o","O")
-##                    t=t.replace("p","P")
-##                    t=t.replace("q","Q")
-##                    t=t.replace("r","R")
-##                    t=t.replace("s","S")
-##                    t=t.replace("t","T")
-##                    t=t.replace("u","U")
-##                    t=t.replace("v","V")
-##                    t=t.replace("w","W")
-##                    t=t.replace("x","X")
-##                    t=t.replace("y","Y")
-##                    t=t.replace("z","Z")
-##                    #ENCRYPT
-##                    t=t.replace("0","F")
-##                    t=t.replace("1","R")
-##                    t=t.replace("2","S")
-##                    t=t.replace("3","A")
-##                    t=t.replace("4","T")
-##                    t=t.replace("5","D")
-##                    t=t.replace("6","V")
-##                    t=t.replace("7","E")
-##                    t=t.replace("8","I")
-##                    t=t.replace("9","B")
-##                    t=t.replace("A","!3")
-##                    t=t.replace("B","!9")
-##                    t=t.replace("C","X")
-##                    t=t.replace("D","!5")
-##                    t=t.replace("E","E")
-##                    t=t.replace("F","!0")
-##                    t=t.replace("G","H")
-##                    t=t.replace("H","!G")
-##                    t=t.replace("I","!8")
-##                    t=t.replace("J","N")
-##                    t=t.replace("K","Z")
-##                    t=t.replace("L","W")
-##                    t=t.replace("M","O")
-##                    t=t.replace("N","!J")
-##                    t=t.replace("O","!M")
-##                    t=t.replace("P","U")
-##                    t=t.replace("Q","Y")
-##                    t=t.replace("R","!1")
-##                    t=t.replace("S","!2")
-##                    t=t.replace("T","!4")
-##                    t=t.replace("U","!P")
-##                    t=t.replace("V","!6")
-##                    t=t.replace("W","!L")
-##                    t=t.replace("X","!C")
-##                    t=t.replace("Y","!Q")
-##                    t=t.replace("Z","!K")
                     t=t.replace("//","\n")
                     file=open("%s.txt"%(nome),"w")
                     file.write(t)
                     file.close()
                     print("Saved")
                 elif y=="n":
-##                    t=t.replace("//","\n")
-##                    file=open("%s.txt"%(nome),"w")
-##                    file.write(t)
-##                    file.close()
                     print("Text not saved")
                 else:
                     y=0
@@ -325,9 +212,6 @@ def py(nome):
         
     except FileNotFoundError:
         print("eeeeeeeeeeee")
-
-
-
 
 def mate(livello):
     giuste=0
@@ -353,8 +237,6 @@ def mate(livello):
             print("Risultato errato")
 
     
-
-
     elif livello=="medium":
         n1 = random.randint(10,30)
         n2 = random.randint(1,25)
@@ -397,12 +279,9 @@ def mate(livello):
 
         else:
             print("Risultato errato")
-
-
-        
+       
     else:
         print("non valido")
-
 
 
 def parab():
@@ -425,7 +304,6 @@ def parab():
             v+=1
         else:
             v-=1
-
 
         delta = ((b*b)-4*(a*c))
         print("delta=",delta,"\n")
@@ -487,8 +365,6 @@ def parab():
                     t.write("%s<x<%s"%(r1,r2))
                     t.up()
             
-                
-
     #delta negativo        
                
         else:
@@ -529,7 +405,6 @@ def parab():
                 t.up()
 
 
-
         val=str(input('Premi "invio" per cancellare'))
         if val=="":
             t.clear()
@@ -541,12 +416,8 @@ def parab():
             break
 
 
-
-
-
 def help1():
     print("*Here a list of commands*\n")
-    #print("/calc")
     print("/parap")
     print("/file (show the list of file saved in os dir)")
     print("/txt (create/open/delete file)")
@@ -570,51 +441,7 @@ def restart():
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
     intro()
 
-def calc():
-    while True:
-        a=0
-        b=0
-        c=0
-        op=0
-        print("\n*Calculator*")
-        try:
-            print("Type '1' to do an addition\nType '2' to do a subtrction\nType '3' to do a multiplication\nType '4' to do a division\nType '5' to exit")
-            op=int(input(">>: "))
-            if not (op>=1 and op<=5):
-                print("You can only type 1, 2, 3, 4, 5")
-                op=int(input(">>: "))
-                while not (op>=1 and op<=5):
-                    print("You can only type 1, 2, 3, 4, 5")
-                    op=int(input(">>: "))
-        except Exception:
-            print("You can only type 1, 2, 3, 4, 5")
-        if op==1:
-            a=int(input("how many values ​​do you want to insert?: "))
-            a2=range(0,a)
-            for v in a2:
-                b=float(input(">>: "))
-                c+=b
-            print(c)
-        elif op==2:
-            a=float(input("v1 >>: "))
-            b=float(input("v2 >>: "))
-            c=a-b
-            print(a,"-",b,"=",c)        
-        elif op==3:
-            c=1
-            a=int(input("how many values ​​do you want to insert?: "))
-            a2=range(0,a)
-            for v in a2:
-                b=float(input(">>: "))
-                c=b*c
-            print(c)
-        elif op==4:
-            a=float(input("v1 >>: "))
-            b=float(input("v2 >>: "))
-            c=a/b
-            print(a,"/",b,"=",c)
-        elif op==5:
-            break
+
 
 def chat():
     bot=commands.Bot(command_prefix="/")
@@ -679,8 +506,6 @@ while True:
         restart()
     elif i=="/help":
         help1()
-    elif i=="/calc":
-        calc()
     elif i=="/parab":
         parab()
     elif i=="/file":
@@ -711,7 +536,6 @@ while True:
         print("Finchè non verrà risolto il problema avvia manualmente il file 'chat.py'")
         print("avvio chat system(writer)...")
         chat()
-        
         
 					    </p>    
 
