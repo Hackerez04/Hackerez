@@ -129,9 +129,13 @@ if ver!=version:
     agg_os=str(div_f.find("p", class_="os_os"))
     agg_os=agg_os.replace('<p class="os_os">',"")
     agg_os=agg_os.replace("</p>","")
+    agg_os=agg_os.replace("&gt;",">")
+    agg_os=agg_os.replace("&lt;","<")
     agg_chat=str(div_f.find("p", class_="os_chat"))
     agg_chat=agg_chat.replace('<p class="os_chat">',"")
     agg_chat=agg_chat.replace("</p>","")
+    agg_chat=agg_chat.replace("&gt;",">")
+    agg_chat=agg_chat.replace("&lt;","<")
     print("installazione degli aggiornamenti...")
     time.sleep(4)
     if agg_os=="null":
@@ -213,6 +217,9 @@ def py(nome):
     except FileNotFoundError:
         print("eeeeeeeeeeee")
 
+
+
+
 def mate(livello):
     giuste=0
     sbagliate=0
@@ -236,7 +243,6 @@ def mate(livello):
         else:
             print("Risultato errato")
 
-    
     elif livello=="medium":
         n1 = random.randint(10,30)
         n2 = random.randint(1,25)
@@ -256,8 +262,6 @@ def mate(livello):
 
         else:
             print("Risultato errato")
-
-
 
     elif livello=="hard":
         n1 = random.randint(1,10)
@@ -279,7 +283,7 @@ def mate(livello):
 
         else:
             print("Risultato errato")
-       
+      
     else:
         print("non valido")
 
@@ -304,6 +308,7 @@ def parab():
             v+=1
         else:
             v-=1
+
 
         delta = ((b*b)-4*(a*c))
         print("delta=",delta,"\n")
@@ -364,7 +369,6 @@ def parab():
                     t.down()
                     t.write("%s<x<%s"%(r1,r2))
                     t.up()
-            
     #delta negativo        
                
         else:
@@ -416,8 +420,10 @@ def parab():
             break
 
 
+
 def help1():
     print("*Here a list of commands*\n")
+    #print("/calc")
     print("/parap")
     print("/file (show the list of file saved in os dir)")
     print("/txt (create/open/delete file)")
@@ -440,7 +446,6 @@ def restart():
     c=0
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
     intro()
-
 
 
 def chat():
@@ -491,8 +496,6 @@ def chat():
                 await canale.send(mm)
     bot.run(mm)
     
-
-
 
 
 #___________________________________________________________
