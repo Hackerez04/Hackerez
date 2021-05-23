@@ -486,7 +486,7 @@ def chat():
                 await canale.send("**Utente scollegato**")
                 exit()
             elif msg=="/file":
-                nfile=str(input("--> File name: "))
+                nfile=str(input("-> File name: "))
                 await canale.send(file=discord.File(r'%s'%(nfile)))
                 print("file inviato")
             else:
