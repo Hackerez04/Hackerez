@@ -143,15 +143,27 @@ if ver!=version:
     if agg_os=="null":
         pass
     else:
-        new=open("os.py", "w")
+        new=open("os.txt", "w")
         new.write(agg_os)
         new.close()
+        new2=open("os.txt","r").readlines()
+        time.sleep(2)
+        new3=open("os.py", "w")
+        new3.write(new2)
+        new3.close()
+        os.remove("os.txt")
     if agg_chat=="null":
         pass
     else:
-        new=open("chat.py", "w")
+        new=open("chat.txt", "w")
         new.write(agg_chat)
         new.close()
+        new2=open("chat.txt","r").readlines()
+        time.sleep(2)
+        new3=open("chat.py", "w")
+        new3.write(new2)
+        new3.close()
+        os.remove("chat.txt")
 else:
     pass
     
