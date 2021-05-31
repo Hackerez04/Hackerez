@@ -492,7 +492,7 @@ def chat():
                 await canale.send(file=discord.File(r'%s'%(nfile)))
                 print("file inviato")
             else:
-                m="[%s]>> %s"%(nome,msg)
+                m="[%s]- %s"%(nome,msg)
                 mm=""
                 for c in m:
                     mm+=chr(ord(c)+4)
