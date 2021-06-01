@@ -94,7 +94,7 @@ function closeNav() {
 
 
 <div class="os_func">
-	<h4>1.7.3</h4>
+	<h4>1.7.4</h4>
 	<p class="os_os">
 <!--
 import math
@@ -115,7 +115,7 @@ a=0
 b=0
 c=0
 i=""
-version="1.7.3"
+version="1.7.4"
 print("Controllo aggiornamenti...")
 time.sleep(2)
 sito="https://hackerez04.github.io/Hackerez/contact.html"
@@ -585,9 +585,9 @@ async def on_message(message):
                     output+=' '
             print('%s'%(output))
 
-    if str(message.attachments) == "[]": # Checks if there is an attachment on the message
+    if str(message.attachments) == "[]": 
         return
-    else: # If there is it gets the filename from message.attachments
+    else: 
         split_v1 = str(message.attachments).split("filename='")[1]
         filename = str(split_v1).split("' ")[0]
         r="null"
@@ -595,7 +595,7 @@ async def on_message(message):
                 while r=="null":
                         r=str(input("********Do you want to download {} (y/n)?********\n: ".format(filename)))
                         if r=="y":
-                                await message.attachments[0].save(fp="{}".format(filename)) # saves the file
+                                await message.attachments[0].save(fp="{}".format(filename))
                                 print("file downloaded")
                         elif r=="n":
                                 print(" ")
