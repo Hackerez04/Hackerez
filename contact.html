@@ -94,7 +94,7 @@ function closeNav() {
 
 
 <div class="os_func">
-	<h4>1.7.4</h4>
+	<h4>1.7.5</h4>
 	<p class="os_os">
 <!--
 import math
@@ -115,7 +115,7 @@ a=0
 b=0
 c=0
 i=""
-version="1.7.4"
+version="1.7.5"
 print("Controllo aggiornamenti...")
 time.sleep(2)
 sito="https://hackerez04.github.io/Hackerez/contact.html"
@@ -444,6 +444,8 @@ def help1():
 
 def intro():
     print("(Version: %s)"%(version))
+    print("- Aggiunti nuovi formati di file da poter esportare")
+    print("- Aggiunta tabella degli aggiornamenti")
     print("______________________________")
     print("System On")
     print("______________________________\n\n")
@@ -591,7 +593,7 @@ async def on_message(message):
         split_v1 = str(message.attachments).split("filename='")[1]
         filename = str(split_v1).split("' ")[0]
         r="null"
-        if ((filename.endswith(".txt")) or (filename.endswith(".py")) or (filename.endswith(".jpg")) or (filename.endswith(".gif")) or (filename.endswith(".png")) or (filename.endswith(".cpp")) or (filename.endswith(".mp3"))): # Checks if it is a .csv file
+        if ((filename.endswith(".txt")) or (filename.endswith(".py")) or (filename.endswith(".jpg")) or (filename.endswith(".gif")) or (filename.endswith(".png")) or (filename.endswith(".pdf")) or (filename.endswith(".cpp")) or (filename.endswith(".mp3"))):
                 while r=="null":
                         r=str(input("********Do you want to download {} (y/n)?********\n: ".format(filename)))
                         if r=="y":
