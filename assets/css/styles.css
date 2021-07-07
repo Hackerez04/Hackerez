@@ -72,17 +72,17 @@ td.tabella {
 
 .blackbg {
   background-color: #0c0e12;
-  background-image: url("/assets/svg/playstation.svg");
+  background-image: url("../assets/svg/playstation.svg");
 }
 
 .pattern1 {
   background-color: #0c0e12;
-  background-image: url("/assets/svg/aztec.svg");
+  background-image: url("../assets/svg/aztec.svg");
 }
 
 .pattern2 {
   background-color: #0c0e12;
-  background-image: url("/assets/svg/polka-dots.svg");
+  background-image: url("../assets/svg/polka-dots.svg");
 }
 
 .sfondo1 {
@@ -209,7 +209,7 @@ body {
   padding-bottom: 50px;
 }
 .sfondodisc2 {
-  background-image: url("/assets/img/ds_pattern.png");
+  background-image: url("../assets/img/ds_pattern.png");
 }
 .titoloinizio {
   text-align: center;
