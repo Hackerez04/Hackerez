@@ -1,616 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Contact</title>
-<style>
-@media screen and (min-width: 1200) {
-	body {
-		font-size: 200%;
-	}
-}
-.os_func {
-	visibility: hidden;
-}
-.os_os {
-	visibiity: hidden;
-}
-.os_chat {
-	visibility: hidden;
-}
-</style>
-<link rel="stylesheet" type="text/css" href="style1.css">
-</head>
-<body style="background-image: url(pattern3.jpg);">
+  <head>
+    <title>Contact</title>
+    <style>
+      @media screen and (min-width: 1200) {
+        body {
+          font-size: 200%;
+        }
+      }
+      .os_func {
+        visibility: hidden;
+      }
+      .os_os {
+        visibiity: hidden;
+      }
+      .os_chat {
+        visibility: hidden;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
+  </head>
+  <body class="pattern2">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="../Hackerez.html" class="home-link">Home</a>
+      <a href="../pages/sito_bot.html">Discord Bot</a>
+      <a href="../pages/launchpad.html">Launchpad</a>
+      <a href="../pages/contact.html">Contact</a>
+    </div>
 
-<script>
+    <div id="main">
+      <nav class="nav">
+        <div class="btn bottone1 menu" onclick="openNav()">Menu</div>
+        <a
+          class="btn flat youtube"
+          href="https://www.youtube.com/channel/UCrRgMTVz4Uu-_pKMOR6ygIg"
+          target="_blank"
+        >
+          YouTube
+        </a>
+        <a
+          class="btn flat discord"
+          href="https://discord.gg/D3AVjxF"
+          target="_blank"
+        >
+          Discord
+        </a>
+      </nav>
 
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.9)";
-}
-
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "#363636";
-}
-
-</script>
-
-
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="sito_bot.html">Discord Bot</a>
-    <a href="launchpad.html">Launchpad</a>
-    <a href="contact.html">Contact</a>
-    <a href="Hackerez.html">Back</a>
-</div>
-      
-
-<table>
-  <tr>
-    <td>
-      <div class="bottone1" onclick="openNav()"><b>Menu</b></div>
-    </td>
-    <td>
-      <a class="yt" href="https://www.youtube.com/channel/UCrRgMTVz4Uu-_pKMOR6ygIg" target="_blank"><div class="youtube"><b>You Tube</b></div></a>
-    </td>
-    <td>
-      <a class="ds" href="https://discord.gg/D3AVjxF" target="_blank"><div class="discord"><b>Discord</b></div></a>
-    </td>
-  </tr>
-</table>
-      
-
-<div id="main">
-
-<div class="centro">
-<img src="logo.jpg" class="logo" alt="hackerez_logoa">
-<h1>Contact me</h1>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
-
-<h3>
-<table class="contact">
-    <tr>
-        <th class="contact">Instagram:</th>
-        <td class="contact">hackerez_</td>
-    </tr>
-    <tr>
-        <th class="contact">Email:</th>
-        <td class="contact">hackerez.developer@gmail.com</td>
-    </tr>
-</table>
-</h3>
-</div>
-
-
-
-<div class="os_func">
-	<h4>1.7.5</h4>
-	<p class="os_os">
-<!--
-import math
-from turtle import Turtle, Screen
-import os, os.path
-from os import listdir
-from os.path import isfile, join
-import socket
-import random
-import discord
-from discord.ext import commands, tasks
-from discord.utils import get
-from discord import File
-import asyncio
-import bs4, requests, webbrowser
-import time
-a=0
-b=0
-c=0
-i=""
-version="1.7.5"
-print("Controllo aggiornamenti...")
-time.sleep(2)
-sito="https://hackerez04.github.io/Hackerez/contact.html"
-response=requests.get(sito)
-response.raise_for_status()
-soup=bs4.BeautifulSoup(response.text, "html.parser")
-div_f=soup.find("div", class_="os_func")
-ver=str(div_f.find("h4"))
-ver=ver.replace("<h4>","")
-ver=ver.replace("</h4>","")
-if ver!=version:
-    agg_os=str(div_f.find("p", class_="os_os"))
-    agg_os=agg_os.replace('<%s class="os_os">'%("p"),"")
-    agg_os=agg_os.replace("</%s>"%("p"),"")
-    agg_os=agg_os.replace("<!%s"%("--"),"")
-    agg_os=agg_os.replace("%s>"%("--"),"")
-    
-    agg_chat=str(div_f.find("p", class_="os_chat"))
-    agg_chat=agg_chat.replace('<%s class="os_chat">'%("p"),"")
-    agg_chat=agg_chat.replace("</%s>"%("p"),"")
-    agg_chat=agg_chat.replace("<!%s"%("--"),"")
-    agg_chat=agg_chat.replace("%s>"%("--"),"")
-    print("installazione degli aggiornamenti...")
-    time.sleep(4)
-    if agg_os=="null":
-        pass
-    else:
-        new=open("os.py", "w")
-        #agg_os=agg_os.encode("utf8")
-        new.write(agg_os)
-        new.close()
-    if agg_chat=="null":
-        pass
-    else:
-        new=open("chat.py", "w")
-        new.write(agg_chat)
-        new.close()
-    print("\n**AGGIORNAMENTO COMPLETATO**\n")
-    print("Chiudi questa finestra e prima di eseguire di nuovo il programma")
-    print("fare tasto destro su 'os.py' -> Edit with IDLE")
-    print("Successivamente premere il tasto 'cancel' che uscirà e salvare\n")
-    print("(ripetere questo passaggio anche con 'chat.py')")
-    time.sleep(200)
-else:
-    pass
-    
-    
-
-
-def filedir():
-    print("total files:",len([name for name in os.listdir(".") if os.path.isfile(name)]))
-    onlyfiles = [f for f in listdir(".") if isfile(join(".", f))]
-    c=0
-    for fl in onlyfiles[0:]:
-        print(c,":",fl,"\n")
-        c+=1
-        
-def txt(nome):
-    t=""
-    try:
-        print("________________________%s.txt________________________"%(nome))
-        file=open("%s.txt"%(nome),"r").readlines()
-        for word in file[0:]:
-            word = word.replace("\n","")
-            print(word)
-            t+=word
-        print("___________________________________________________________")
-        e=0
-        while e==0:
-            print("Type 'd' to delete or 's' to save")
-            e=str(input(">> "))
-            if e=="s":
-                print("Saved")
-            elif e=="d":
-                os.remove("%s.txt"%(nome))
-                print("%s.txt has been deleted"%(nome))
-            else:
-                e=0
-        
-    except FileNotFoundError:
-        t=str(input("txt\n(Scrivendo '//' andrai a capo):\n"))
-        y=0
-        while y==0:
-            try:
-                y=str(input("Do you want to save the text? (y/n): "))
-                if y=="y":
-                    t=t.replace("//","\n")
-                    file=open("%s.txt"%(nome),"w")
-                    file.write(t)
-                    file.close()
-                    print("Saved")
-                elif y=="n":
-                    print("Text not saved")
-                else:
-                    y=0
-            except Exception:
-                y=0
-                
-
-def py(nome):
-    try:
-        file=open("%s.py"%(nome),"r").readlines()
-        for word in file[0:]:
-            word = word.replace("\n","")
-            print(word)
-        print("___________________________________________________________")
-        
-    except FileNotFoundError:
-        print("eeeeeeeeeeee")
-
-
-
-
-def mate(livello):
-    giuste=0
-    sbagliate=0
-    if livello=="easy":
-        n1 = random.randint(1,10)
-        n2 = random.randint(1,10)
-        operatore = random.randint(0,1)
-        risu = 0
-        o = "null"
-        if operatore == 0:
-            o = "+"
-            risu = n1+n2
-        elif operatore == 1:
-            o = "-"
-            risu = n1-n2
-        
-        risp = int(input("%s%s%s = "%(n1,o,n2)))
-        if risp==risu:
-            print("Risultato corretto")
-
-        else:
-            print("Risultato errato")
-
-    elif livello=="medium":
-        n1 = random.randint(10,30)
-        n2 = random.randint(1,25)
-        operatore = random.randint(0,1)
-        risu = 0
-        o = "null"
-        if operatore == 0:
-            o = "+"
-            risu = n1+n2
-        elif operatore == 1:
-            o = "-"
-            risu = n1-n2
-        
-        risp = int(input("%s%s%s = "%(n1,o,n2)))
-        if risp==risu:
-            print("Risultato corretto")
-
-        else:
-            print("Risultato errato")
-
-    elif livello=="hard":
-        n1 = random.randint(1,10)
-        n2 = random.randint(1,10)
-        n3 = random.randint(1,20)
-        operatore = random.randint(0,1)
-        risu = 0
-        o = "null"
-        if operatore == 0:
-            o = "+"
-            risu = (n1*n2)+n3
-        elif operatore == 1:
-            o = "-"
-            risu = (n1*n2)-n3
-        
-        risp = int(input("%s%s%s%s%s = "%(n1,"*",n2,o,n3)))
-        if risp==risu:
-            print("Risultato corretto")
-
-        else:
-            print("Risultato errato")
-      
-    else:
-        print("non valido")
-
-
-def parab():
-    t = Turtle()
-    sfondo = Screen()
-    sfondo.colormode(255)
-    t.speed(0)
-    R = 0
-    G = 0
-    B = 0
-
-    while True:
-        a=float(input("a: "))
-        b=float(input("b: "))
-        c=float(input("c: "))
-        v=0
-        segno=str(input("Segno: "))
-        print("%sx^2 "%(a)+" %sx "%(b)+" %s\n"%(c))
-        if a>=0:
-            v+=1
-        else:
-            v-=1
-
-
-        delta = ((b*b)-4*(a*c))
-        print("delta=",delta,"\n")
-        if delta>=0:
-            delta2=math.sqrt(delta)
-            r1=(-(b)+delta2)/(2*a)
-            r2=(-(b)-delta2)/(2*a)
-            print("risultato 1:",round(r1, 1),"")
-            print("risultato 2:",round(r2, 1),"\n\n")
-            t.down()
-            t.forward(200)
-            t.forward(-400)
-            t.goto(0,0)
-            if v<0:
-                t.goto(-50,0)
-                t.right(-90)
-                for i in range(0,180):
-                    t.forward(1)
-                    t.right(1)
-                t.forward(100)
-                t.up()
-                t.goto(-50,0)
-                t.down()
-                t.forward(100)
-                t.up()
-            else:
-                t.goto(50,0)
-                t.right(90)
-                for i in range(0,180):
-                    t.forward(1)
-                    t.right(1)
-                t.forward(100)
-                t.up()
-                t.goto(50,0)
-                t.down()
-                t.forward(100)
-                t.up()
-
-            if segno==">":
-                if r1>r2:
-                    t.goto(200,-100)
-                    t.down()
-                    t.write("x<%s V x>%s"%(r2,r1))
-                    t.up()
-                else:
-                    t.goto(200,-100)
-                    t.down()
-                    t.write("x<%s V x>%s"%(r1,r2))
-                    t.up()
-            elif segno=="<":
-                if r1>r2:
-                    t.goto(200,-100)
-                    t.down()
-                    t.write("%s<x<%s"%(r2,r1))
-                    t.up()
-                else:
-                    t.goto(200,-100)
-                    t.down()
-                    t.write("%s<x<%s"%(r1,r2))
-                    t.up()
-    #delta negativo        
-               
-        else:
-            delta=-1
-            print("delta negativo\n\n")
-        
-            t.down()
-            t.forward(200)
-            t.forward(-400)
-            t.goto(0,0)
-            if v<0:
-                t.up()
-                t.goto(-50,-100)
-                t.right(-90)
-                t.down()
-                for i in range(0,180):
-                    t.forward(1)
-                    t.right(1)
-                t.forward(100)
-                t.up()
-                t.goto(-50,-100)
-                t.down()
-                t.forward(100)
-                t.up()
-            else:
-                t.up()
-                t.goto(50,100)
-                t.right(90)
-                t.down()
-                for i in range(0,180):
-                    t.forward(1)
-                    t.right(1)
-                t.forward(100)
-                t.up()
-                t.goto(50,100)
-                t.down()
-                t.forward(100)
-                t.up()
-
-
-        val=str(input('Premi "invio" per cancellare'))
-        if val=="":
-            t.clear()
-            t.reset()
-            break
-        else:
-            t.clear()
-            t.reset()
-            break
-
-
-
-def help1():
-    print("*Here a list of commands*\n")
-    #print("/calc")
-    print("/parap")
-    print("/file (show the list of file saved in os dir)")
-    print("/txt (create/open/delete file)")
-    print("/chat")
-    print("/off")
-    print("/restart")
-    print("\n")
-
-
-def intro():
-    print("(Version: %s)"%(version))
-    print("- Aggiunti nuovi formati di file da poter esportare")
-    print("- Aggiunta tabella degli aggiornamenti")
-    print("______________________________")
-    print("System On")
-    print("______________________________\n\n")
-    print("type '/help' for a list of commands")
-    print("\n")
-
-def restart():
-    a=0
-    b=0
-    c=0
-    print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-    intro()
-
-
-def chat():
-    bot=commands.Bot(command_prefix="/")
-    m="Rno4SX]9SXk8SHo6R~k4RHY52\sX\TU2WZ9Wx{Ju54V~l[{Q={{wOj8K9TE"
-    mm=""
-    for c in m:
-        mm+=chr(ord(c)-4)
-    @bot.event
-    async def on_ready():
-            print("Chat avviata\n(Per uscire digitare '/quit')")
-            print("Per caricare un file scrivere '/file' e premere il tasto enter.\nSuccessivamente scrivere il nome del file 'nomefile.estensione' e premere il tasto enter")
-            print("'es: test1.txt'\n")
-            global nome
-            nome=str(input("**Nome utente**> "))
-            h = socket.gethostname()
-            i = socket.gethostbyname(h)
-            await bot.get_channel(843800724743389184).send("[100]ip/ %s %s"%(h,i))
-            
-    @bot.event
-    async def on_message(message):
-        if message.author==bot.user:
-            return
-        channel=message.channel
-        while True:
-            global nome
-            msg=str(input("Messaggio: "))
-            canale=bot.get_channel(819527389586653215)
-            if msg=="/quit":
-                await canale.send("**Utente scollegato**")
-                exit()
-            elif msg=="/file":
-                nfile=str(input("-> File name: "))
-                await canale.send(file=discord.File(r'%s'%(nfile)))
-                print("file inviato")
-            else:
-                m="[%s]- %s"%(nome,msg)
-                mm=""
-                for c in m:
-                    mm+=chr(ord(c)+4)
-                await canale.send(mm)
-    bot.run(mm)
-    
-
-
-#___________________________________________________________
-intro()
-while True:
-    i=str(input("command: "))
-    if i=="/off":
-        print("Shutdown...")
-        break
-    elif i=="/restart":
-        restart()
-    elif i=="/help":
-        help1()
-    elif i=="/parab":
-        parab()
-    elif i=="/file":
-        filedir()
-    elif i=="/txt":
-        nome=str(input("File name: "))
-        txt(nome)
-    elif i=="/py":
-        nome=str(input("File name: "))
-        py(nome)
-        exec("%s.py"%(nome))
-    elif i=="ipconfig":
-        hostname = socket.gethostname()
-        ip_address = socket.gethostbyname(hostname)
-        print(f"Hostname: {hostname}")
-        print(f"IP Address: {ip_address}")
-    elif i=="/math":
-        while True:
-    
-            i=str(input("livello (easy, medium, hard, stop): "))
-            if i=="stop":
-                break
-        mate(i)
-    elif i=="/chat":
-        #exec("chat.py")
-        #print("avvio chat system..")
-        #os.system("python chat.py")
-        print("Finchè non verrà risolto il problema avvia manualmente il file 'chat.py'")
-        print("avvio chat system(writer)...")
-        chat()
--->        
-					    </p>    
-
-	<p class="os_chat">
-<!--
-import discord
-from discord.ext import commands, tasks
-from discord.utils import get
-from discord import File
-import asyncio
-bot = commands.Bot(command_prefix='/')
-m="Rno~SHg9QnY4R~o~SHU6R~o52\sHjeU2jc8RNW5x]fMiz<n1}tESRZpOFT8"
-mm=""
-for c in m:
-        mm+=chr(ord(c)-4)
-@bot.event
-async def on_ready():
-	print('Chat avviata')
-	c=bot.get_channel(819527389586653215)
-	await c.send("//")
-	
-@bot.event
-async def on_message(message):
-    if message.author == bot.user:
-        return
-    channel = message.channel
-
-    if message.content.endswith(''):
-            msg=message.content.split()
-            m=""
-            for w in msg[0:]:
-                    m+=w
-                    m+=' '
-            mm=""
-            for c in m:
-                mm+=chr(ord(c)-4)
-            msg=mm.split()
-            output=''
-            for word in msg[0:]:
-                    output+=word
-                    output+=' '
-            print('%s'%(output))
-
-    if str(message.attachments) == "[]": 
-        return
-    else: 
-        split_v1 = str(message.attachments).split("filename='")[1]
-        filename = str(split_v1).split("' ")[0]
-        r="null"
-        if ((filename.endswith(".txt")) or (filename.endswith(".py")) or (filename.endswith(".jpg")) or (filename.endswith(".gif")) or (filename.endswith(".png")) or (filename.endswith(".pdf")) or (filename.endswith(".cpp")) or (filename.endswith(".mp3"))):
-                while r=="null":
-                        r=str(input("********Do you want to download {} (y/n)?********\n: ".format(filename)))
-                        if r=="y":
-                                await message.attachments[0].save(fp="{}".format(filename))
-                                print("file downloaded")
-                        elif r=="n":
-                                print(" ")
-                        else:
-                                r="null"
-
-bot.run(mm)
--->
-	</p>
-		
-</div>
-
-
-
-</body>
+      <div class="contact">
+        <div class="card">
+          <div class="centro">
+            <img src="../assets/img/logo.jpg" class="logo" alt="hackerez_logoa" />
+            <h1>Contact me</h1>
+          </div>
+          <div class="contact-entries">
+            <a
+              class="btn outlined"
+              target="_blank"
+              href="http://instagram.com/hackerez_"
+            >
+              hackerez_
+              <img src="../assets/svg/instagram.svg" />
+            </a>
+            <a
+              class="btn outlined"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCrRgMTVz4Uu-_pKMOR6ygIg"
+            >
+              Hackerez
+              <img src="../assets/svg/youtube.svg" />
+            </a>
+            <a
+              class="btn outlined"
+              target="_blank"
+              href="https://discord.gg/D3AVjxF"
+            >
+              https://discord.gg/D3AVjxF
+              <img src="../assets/svg/discord.svg" />
+            </a>
+            <a
+              class="btn outlined"
+              target="_blank"
+              href="mailto:hackerez.developer@gmail.com"
+            >
+              hackerez.developer@gmail.com
+              <img src="../assets/svg/email.svg" />
+            </a>
+            <a
+              class="btn outlined"
+              target="_blank"
+              href="https://github.com/Hackerez04"
+            >
+              Hackerez04
+              <img src="../assets/svg/github.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/assets/js/sidebar.js"></script>
 </html>
