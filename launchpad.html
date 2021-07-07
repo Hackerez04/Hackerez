@@ -1,135 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <title>Launchpad</title>
+    <style>
+      @media screen and (min-width: 1200) {
+        body {
+          font-size: 200%;
+        }
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+  </head>
+  <body class="pattern1">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html" class="home-link">Home</a>
+      <a href="sito_bot.html">Discord Bot</a>
+      <a href="launchpad.html">Launchpad</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-<title>Launchpad</title>
-<style>
-@media screen and (min-width: 1200) {
-	body {
-		font-size: 200%;
-	}
-}
-</style>
-<link rel="stylesheet" type="text/css" href="style1.css">
-</head>
-<body class="pattern1">
-
-<script>
-
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.9)";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "#363636";
-}
-
-</script>
-
-
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="sito_bot.html">Discord Bot</a>
-    <a href="launchpad.html">Launchpad</a>
-    <a href="contact.html">Contact</a>
-    <a href="Hackerez.html">Back</a>
-</div>
-      
-<!-- Use any element to open the sidenav -->
-<table>
-  <tr>
-    <td>
-      <div class="bottone1" onclick="openNav()"><b>Menu</b></div>
-    </td>
-    <td>
-      <a class="yt" href="https://www.youtube.com/channel/UCrRgMTVz4Uu-_pKMOR6ygIg" target="_blank"><div class="youtube"><b>You Tube</b></div></a>
-    </td>
-    <td>
-      <a class="ds" href="https://discord.gg/D3AVjxF" target="_blank"><div class="discord"><b>Discord</b></div></a>
-    </td>
-  </tr>
-</table>
-      
-
-<div id="main">
-
-<div class="centro">
-<img src="logo.jpg" class="logo" alt="hackerez_logoa">
-<h1>Hackerez</h1>
-<br>
-<br>
-<p class="ds">Here you can find my launchpad projects</p>
-</div>
-<br>
-<br>
-
-</div>
-<!--
-<div class="ds">
-  <table style="text-align: center;">
-    <tr>
-      <td class="tabella">
-        <p>Berserker</p>
-        <video width="420" height="340" controls>
-          <source src="berserker_youtube2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-      </td>
-      <td class="tabella">
-        <p>You Don't Even Know Me</p>
-        <video width="420" height="340" controls>
-          <source src="you_don't_even know_me.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-      </td>
-      <td class="tabella">
-        <p>Faded Remix</p>
-        <video width="420" height="340" controls>
-          <source src="Faded_Alan_Walker_(B3nte_Remix).mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-      </td>
-    </tr>
-  </table>
-  </div>
--->
-
-<div class="ds">
-  <table style="text-align: center;">
-    <tr>
-      <td class="tabella">
-        <p>Don’t Bother</p>
-        <iframe width="420" height="340" src="https://www.youtube.com/embed/JGyT7bztOHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </td>
-      <td class="tabella">
-        <p>Ping</p>
-        <iframe width="420" height="340" src="https://www.youtube.com/embed/35lbWF7YOB4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </td>
-      <td class="tabella">
-        <p>Berserker</p>
-        <iframe width="420" height="340" src="https://www.youtube.com/embed/EFUXHV0G9Xg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </td>
-    </tr>
-    <tr>
-      <td class="tabella">
-        <p>You Don't Even Know Me</p>
-        <iframe width="420" height="340" src="https://www.youtube.com/embed/LVhRgbw-kxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </td>
-      <td class="tabella">
-        <p>Faded Remix</p>
-        <iframe width="420" height="340" src="https://www.youtube.com/embed/47EgZ2NB3pI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </td>
-    </tr>
-  </table>
-  </div>
-
-
-
-</body>
+    <div id="main">
+      <nav class="nav">
+        <div class="btn bottone1" onclick="openNav()">Menu</div>
+        <a
+          class="btn flat youtube"
+          href="https://www.youtube.com/channel/UCrRgMTVz4Uu-_pKMOR6ygIg"
+          target="_blank"
+        >
+          YouTube
+        </a>
+        <a
+          class="btn flat discord"
+          href="https://discord.gg/D3AVjxF"
+          target="_blank"
+        >
+          Discord
+        </a>
+      </nav>
+      <div class="centro">
+        <img src="assets/img/logo.jpg" class="logo" alt="hackerez_logoa" />
+        <h1>Hackerez</h1>
+        <h3 class="ds">Here you can find my launchpad projects</h3>
+      </div>
+      <div class="youtube-grid">
+        <div class="card">
+          <p>Don’t Bother</p>
+          <iframe
+            src="https://www.youtube.com/embed/JGyT7bztOHk"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="card">
+          <p>Ping</p>
+          <iframe
+            src="https://www.youtube.com/embed/35lbWF7YOB4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="card">
+          <p>Berserker</p>
+          <iframe
+            src="https://www.youtube.com/embed/EFUXHV0G9Xg"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </tr>
+      <tr>
+        <div class="card">
+          <p>You Don't Even Know Me</p>
+          <iframe
+            src="https://www.youtube.com/embed/LVhRgbw-kxc"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="card">
+          <p>Faded Remix</p>
+          <iframe
+            src="https://www.youtube.com/embed/47EgZ2NB3pI"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../assets/js/sidebar.js"></script>
 </html>
